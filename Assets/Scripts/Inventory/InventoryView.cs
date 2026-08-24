@@ -1,15 +1,42 @@
+using Inventory.Container;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class InventoryView : MonoBehaviour
+
+public abstract class InventoryView : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public InventoryObject inventory;
+    public GameObject slotPrefab;
+    protected InventorySlot[] slots;
+    
+    public abstract void CreateSlots();
+
+    private void Start()
+    {
+        CreateSlots();
+    }
+    
+    public void OnEnter(InventorySlot slot)
+    {
+        Debug.Log("OnEnter");
+    }
+
+    public void OnExit(InventorySlot slot)
+    {
+
+    }
+
+    public void OnDragStart(InventorySlot slot)
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnDragEnd(InventorySlot slot)
+    {
+        
+    }
+
+    public void OnDrag(InventorySlot slot, PointerEventData eventData)
     {
         
     }
