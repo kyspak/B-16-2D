@@ -1,9 +1,10 @@
-﻿// using Inventory.Database;
+﻿// using Inventory.Container;
+// using Inventory.Database;
 // using Inventory.Items;
-// using Tests.Inventory;
+// using Inventory;
 // using UnityEngine;
 //
-// namespace Inventory
+// namespace Inventory.Tests
 // {
 //     public static class TestHelpers
 //     {
@@ -14,7 +15,7 @@
 //             database.Items = new ItemsObject[maxStack.Length];
 //             for (int i = 0; i < maxStack.Length; i++)
 //             {
-//                 var item = ScriptableObject.CreateInstance<TestItemObject>();
+//                 var item = ScriptableObject.CreateInstance<TestItemsObject>();
 //
 //                 item.Name = $"Test Item_{i}";
 //                 item.MaxStack = maxStack[i];
@@ -32,8 +33,8 @@
 //
 //             inventory.database = database;
 //             inventory.inventorySize = size;
-//
-//             inventory.container = new Inventory();
+//             
+//             inventory.container = new Container.Inventory();
 //             inventory.container.Initialize(size);
 //
 //             foreach (var slot in inventory.container.Items)

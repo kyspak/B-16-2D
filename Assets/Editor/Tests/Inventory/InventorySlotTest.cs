@@ -1,10 +1,11 @@
 ﻿// using Inventory;
+// using Inventory.Container;
 // using Inventory.Database;
 // using JetBrains.Annotations;
 // using NUnit.Framework;
 //
 //
-// namespace Tests.Inventory
+// namespace Inventory.Tests
 // {
 //     public class InventorySlotTest
 //     {
