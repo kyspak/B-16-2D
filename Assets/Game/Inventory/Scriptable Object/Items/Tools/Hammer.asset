@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Inventory.Items.ToolItem.ToolItemObject
   Id: 1
   Name: "\u041C\u043E\u043B\u043E\u0442\u043E\u0447\u0435\u043A"
-  uiDisplay: {fileID: 0}
+  uiDisplay: {fileID: 21300000, guid: f011c3eed72f4034bac48bd325cf2564, type: 3}
   Description: "\u041E\u0444\u0438\u0433\u0435\u043D\u043D\u044B\u0439 \u043C\u043E\u043B\u043E\u0442\u043E\u043A
     \u0434\u043B\u044F \u0440\u0443\u0431\u043A\u0438 \u0434\u0435\u0440\u0435\u0432\u044C\u0435\u0432"
   MaxStack: 1

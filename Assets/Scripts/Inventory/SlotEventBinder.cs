@@ -8,6 +8,16 @@ namespace Inventory
 {
     public static class SlotEventBinder
     {
+        public static void Unbind(GameObject obj)
+        {
+            var trigger = obj.GetComponent<EventTrigger>();
+
+            if (trigger)
+            {
+                trigger.triggers.Clear();
+            }
+        }
+        
         public static void BindSlotEvent(GameObject obj, InventorySlot slot, InventoryView ui)
         {
             AddEvent(obj, EventTriggerType.PointerEnter, delegate { ui.OnEnter(slot); });
@@ -21,6 +31,36 @@ namespace Inventory
 
         }
 
+<<<<<<< Updated upstream
+=======
+        public static void BindInventoryUIEvent(GameObject obj, InventoryView ui)
+        {
+            AddEvent(obj, EventTriggerType.PointerEnter, delegate { ui.OnEnterInterface(obj); });
+            AddEvent(obj, EventTriggerType.PointerExit, delegate { ui.OnExitInterface(obj); });
+        }
+
+        public static void BindClickEvent(GameObject obj, InventorySlot slot, InventoryView ui)
+        {
+            AddEvent(obj, EventTriggerType.PointerClick, (eventData) =>
+            {
+                //var pointer = eventData as PointerEventData;
+                
+                PointerEventData pointerData = (PointerEventData)eventData;
+
+                switch (pointerData.button)
+                {
+                    case PointerEventData.InputButton.Left:
+                        ui.OnLeftClick(slot);
+                        break;
+                    case PointerEventData.InputButton.Right:
+                        ui.OnRightClick(slot);
+                        break;
+                }
+            });
+            
+        }
+
+>>>>>>> Stashed changes
         private static void AddEvent(GameObject obj,
             EventTriggerType type,
             UnityEngine.Events.UnityAction<BaseEventData> action)

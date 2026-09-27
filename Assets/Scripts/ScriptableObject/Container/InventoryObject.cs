@@ -1,5 +1,7 @@
 ﻿
 using System;
+using System.Data;
+using System.Runtime.CompilerServices;
 using Inventory.Database;
 using Inventory.Items;
 using UnityEngine;
@@ -16,18 +18,13 @@ namespace Inventory.Container
         public void AddItem(Items.Item item, int amount)
         {
             int remaining = amount;
-
-            // int[] emptySlotID = new int[container.Items.Length];
             
             for (int i = 0; i < container.Items.Length; i++)
             {
                 
                 if (amount <= 0)
                     return;
-                //
-                // if (container.Items[i].ID == -1)
-                //       emptySlotID[i] = i;
-                
+
                 if (container.Items[i].ID != item.Id)
                     continue;
                 
@@ -41,21 +38,6 @@ namespace Inventory.Container
                 container.Items[i].AddAmount(toAdd);
                 remaining -= toAdd;
             }
-
-            // if (remaining > 0 && emptySlotID[0] != 0)
-            // {
-            //     for (int i = 0; i < emptySlotID.Length; i++)
-            //     {
-            //         if (remaining == 0)
-            //             return;
-            //         
-            //         int toAdd = Math.Min(item.MaxStack, remaining);
-            //         container.Items[i].UpdateSlot(item.Id, toAdd, database);
-            //         remaining -= toAdd;
-            //         int lastEmptySlot = emptySlotID[i];
-            //     }
-            //     
-            // }
             
             while (remaining > 0)
             {
@@ -83,7 +65,7 @@ namespace Inventory.Container
             if (toSlot.ID == fromSlot.ID)
             {
                 int amount = toSlot.amount + fromSlot.amount;
-                if (toSlot.item.MaxStack > amount)
+                 if (toSlot.item.MaxStack > amount)
                 {
                     toSlot.AddAmount(fromSlot.amount);
                     RemoveItem(fromSlot);
@@ -109,6 +91,50 @@ namespace Inventory.Container
             {
                 slot.UpdateSlot(-1, 0, database);
             }
+        }
+
+        public bool SplitItem(InventorySlot fromSlot, InventorySlot toSlot, int requestAmount)
+        {
+            if (ReferenceEquals(fromSlot, toSlot))
+                return false;
+
+            if (fromSlot.item != null && !toSlot.CanPlaceInSlot(fromSlot.item))
+            {
+                Debug.LogError("Нельзя это положить сюда");
+                return false;
+            }
+
+            if (requestAmount <= 0 || requestAmount > fromSlot.amount)
+                return false;
+            
+            bool isSameItems = toSlot.ID == fromSlot.ID;
+            bool isEmptySlot = toSlot.ID == -1;
+
+            if (!isSameItems && !isEmptySlot)
+                return false;
+
+            int amountActual;
+
+            if (isEmptySlot)
+            {
+                amountActual = requestAmount;
+                toSlot.UpdateSlot(fromSlot.ID, amountActual, database);
+            }
+            else
+            {
+                int space = fromSlot.item.MaxStack - fromSlot.amount;
+                if (space <= 0)
+                    return false;
+                
+                amountActual = Math.Min(space, requestAmount);
+                toSlot.AddAmount(amountActual);
+            }
+            fromSlot.AddAmount(-amountActual);
+            
+            if(fromSlot.amount <= 0)
+                RemoveItem(fromSlot);
+            
+            return true;
         }
         
         private bool SetEmptySlot(Items.Item item, int value)
@@ -157,6 +183,7 @@ namespace Inventory.Container
         public void AddAmount(int value)
         {
             amount += value;
+            OnChanged?.Invoke();
         }
 
         
@@ -169,11 +196,16 @@ namespace Inventory.Container
             OnChanged?.Invoke();
         }
 
-        public bool CanPlaceInSlot(ItemsObject _item)
+        public bool CanPlaceInSlot(Items.Item _item)
         {
             if(ID <= -1 && amount <= 0) 
                 return true;
             return false;
+        }
+
+        public void Bind(ItemDatabaseObject database)
+        {
+            RefreshCache(database);
         }
 
         private void RefreshCache(ItemDatabaseObject database)

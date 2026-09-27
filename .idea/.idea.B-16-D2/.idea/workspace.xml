@@ -12,14 +12,41 @@
   <component name="ChangeListManager">
     <list default="true" id="d96f104c-8adf-4a79-9fa4-beef12c67340" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.B-16-D2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.B-16-D2/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/Assets/Game/Inventory/Scriptable Object/Database/ItemDatabase.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Inventory/Scriptable Object/Database/ItemDatabase.asset" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/Assets/DefaultVolumeProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DefaultVolumeProfile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Inventory/Inventory/New Inventory.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Inventory/Inventory/New Inventory.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Inventory/Scriptable Object/Database/ItemDatabase.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Inventory/Scriptable Object/Database/ItemDatabase.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Inventory/Scriptable Object/Items/Tools/Axe.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Inventory/Scriptable Object/Items/Tools/Axe.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Inventory/Scriptable Object/Items/Tools/Hammer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Inventory/Scriptable Object/Items/Tools/Hammer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Inventory/Sell.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Inventory/Sell.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions" afterDir="false" />
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/DynamicInventoryView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/DynamicInventoryView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventorySlotView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventorySlotView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryView.cs" afterDir="false" />
+<<<<<<< Updated upstream
+=======
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/SlotEventBinder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/SlotEventBinder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/StaticInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/StaticInventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObject/Container/InventoryObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObject/Container/InventoryObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,15 +64,39 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41d29b352f6a475ab1bf7c6628b8279046ae00/6a/0e1068aa/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6567e2a645a94ef68fffcf0e5cb82d14212a00/a2/6028a12f/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6567e2a645a94ef68fffcf0e5cb82d14212a00/bb/6f700977/ScriptableObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6567e2a645a94ef68fffcf0e5cb82d14212a00/e8/3ecebdc1/UnityAction`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d44b17e136d09081da1e8fd0e8c83fde60e11818b9f2442d7ed8cb733fae895e/System.Collections.Generic.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/Inventory/Scriptable Object/Items/Tools/Axe.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/IDamageble.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/DynamicInventoryView.cs" root0="FORCE_HIGHLIGHTING" />
+<<<<<<< Updated upstream
+=======
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/EquipmentInventory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/Installer/SlotPoolInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/InventorySlotBinder.cs" root0="FORCE_HIGHLIGHTING" />
+>>>>>>> Stashed changes
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/InventorySlotView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/SlotEventBinder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObject/Container/InventoryObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObject/Database/ItemDatabaseObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObject/Flags/ItemCategory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObject/Items/ToolItems/IToolUsable.cs" root0="FORCE_HIGHLIGHTING" />
+<<<<<<< Updated upstream
     <setting file="file://$PROJECT_DIR$/Assets/Tests/Inventory/InventoryObjectTest.cs" root0="FORCE_HIGHLIGHTING" />
+=======
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/SeparatePanel/SplitWindowController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@21a28c3a6c83/InputSystem/Actions/InputActionAsset.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@21a28c3a6c83/InputSystem/Actions/InputActionState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@21a28c3a6c83/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@8ccc29d23a79/Runtime/UGUI/EventSystem/EventData/BaseEventData.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@8ccc29d23a79/Runtime/UGUI/EventSystem/EventTrigger.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@8ccc29d23a79/Runtime/UGUI/EventSystem/EventTriggerType.cs" root0="SKIP_HIGHLIGHTING" />
+>>>>>>> Stashed changes
   </component>
   <component name="McpProjectServerCommands">
     <commands />
@@ -57,6 +108,7 @@
       <entry key="MS500" value="1.0" />
       <entry key="S2" value="1.0" />
       <entry key="S5" value="1.0" />
+<<<<<<< Updated upstream
       <entry key="S10" value="1.0" />
       <entry key="S30" value="1.0000112299042898" />
       <entry key="S60" value="1.017145736416524" />
@@ -108,6 +160,59 @@
       <entry key="H4" value="1843.4311562975772" />
       <entry key="D1" value="3064.625136152698" />
       <entry key="W1" value="3366.2826111401087" />
+=======
+      <entry key="S10" value="1.000000003863353" />
+      <entry key="S30" value="1.0088521134361956" />
+      <entry key="S60" value="1.4343289099755372" />
+      <entry key="M2" value="4.8882618407380924" />
+      <entry key="M5" value="20.722838129389345" />
+      <entry key="M10" value="39.50209499072255" />
+      <entry key="M15" value="52.84169471569988" />
+      <entry key="M30" value="87.56290149523383" />
+      <entry key="H1" value="175.3695208432197" />
+      <entry key="H2" value="436.18048892175483" />
+      <entry key="H4" value="1017.8202718812593" />
+      <entry key="D1" value="4725.265019838479" />
+      <entry key="W1" value="7692.113427149366" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="2.2928529478695458E-189" />
+      <entry key="S2" value="8.423848964333244E-48" />
+      <entry key="S5" value="2.611365580258294E-19" />
+      <entry key="S10" value="1.058706132410679E-9" />
+      <entry key="S30" value="0.003992944307454747" />
+      <entry key="S60" value="0.20571656418940298" />
+      <entry key="M2" value="1.654933855875675" />
+      <entry key="M5" value="6.652884452623711" />
+      <entry key="M10" value="11.27447771198111" />
+      <entry key="M15" value="14.09780702994879" />
+      <entry key="M30" value="20.785945926708695" />
+      <entry key="H1" value="36.020752709083524" />
+      <entry key="H2" value="74.32988628908545" />
+      <entry key="H4" value="151.4555918926817" />
+      <entry key="D1" value="586.1186733388067" />
+      <entry key="W1" value="910.5013072665454" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="6.923821680581367E-6" />
+      <entry key="MS500" value="0.09291143652693844" />
+      <entry key="S2" value="0.5520994235815464" />
+      <entry key="S5" value="0.7885094771039731" />
+      <entry key="S10" value="0.8879805656837225" />
+      <entry key="S30" value="0.9736074992210177" />
+      <entry key="S60" value="1.6103542822159556" />
+      <entry key="M2" value="6.492321095283682" />
+      <entry key="M5" value="27.300296756081085" />
+      <entry key="M10" value="50.7082185440332" />
+      <entry key="M15" value="66.87860638867049" />
+      <entry key="M30" value="108.29702294151829" />
+      <entry key="H1" value="211.34054011377822" />
+      <entry key="H2" value="510.4565630062198" />
+      <entry key="H4" value="1169.2200535796865" />
+      <entry key="D1" value="5311.346275684723" />
+      <entry key="W1" value="8602.606348476551" />
+>>>>>>> Stashed changes
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -124,6 +229,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -133,7 +239,7 @@
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;B-16-2D-01-first__scene&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;B-16-02-Inventory&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -201,6 +307,26 @@
       <workItem from="1787143252986" duration="1232000" />
       <workItem from="1787152688371" duration="3579000" />
       <workItem from="1787591281832" duration="5249000" />
+<<<<<<< Updated upstream
+=======
+      <workItem from="1787659390377" duration="7269000" />
+      <workItem from="1787683375179" duration="10288000" />
+      <workItem from="1787729401153" duration="9133000" />
+      <workItem from="1788287350293" duration="7254000" />
+      <workItem from="1788367889571" duration="1251000" />
+      <workItem from="1788523461174" duration="8328000" />
+      <workItem from="1788551906297" duration="1127000" />
+      <workItem from="1788617083568" duration="5013000" />
+      <workItem from="1788641307062" duration="2166000" />
+      <workItem from="1788897180316" duration="3579000" />
+      <workItem from="1789544232187" duration="2671000" />
+      <workItem from="1789842485860" duration="4199000" />
+      <workItem from="1790002885431" duration="9522000" />
+      <workItem from="1790015666045" duration="2894000" />
+      <workItem from="1790081063719" duration="2694000" />
+      <workItem from="1790107721751" duration="5960000" />
+      <workItem from="1790441393820" duration="4721000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
