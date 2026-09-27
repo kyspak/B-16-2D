@@ -74,6 +74,8 @@ namespace Inventory
             _pendingSplitAmount = amount;
             StartManualDrag(source.ID);
         }
+        
+        
 
         private void CompleteSplit(InventorySlot target)
         {
