@@ -1,16 +1,10 @@
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
 using Inventory.Container;
 using UI.SeparatePanel;
 using UnityEngine;
 using UnityEngine.EventSystems;
-<<<<<<< Updated upstream
-=======
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
->>>>>>> Stashed changes
 
 namespace Inventory
 {
@@ -18,15 +12,12 @@ namespace Inventory
 {
     public InventoryObject inventory;
     public GameObject slotPrefab;
-<<<<<<< Updated upstream
     protected InventorySlot[] slots;
-=======
 
     
         
     [SerializeField] private Vector2 _spriteSizeVisual = new Vector2(100, 100);
     
-    protected InventorySlot[] slots;
 
     private static readonly MouseItem mouseItem = new MouseItem();
     private static GameObject _dragVisual;
@@ -37,7 +28,6 @@ namespace Inventory
 
     public virtual void OnLeftClick(InventorySlot slot){}
     public virtual void OnRightClick(InventorySlot slot){}
->>>>>>> Stashed changes
     
     public abstract void CreateSlots();
     
@@ -45,8 +35,6 @@ namespace Inventory
     private void Start()
     {
         CreateSlots();
-<<<<<<< Updated upstream
-=======
         SlotEventBinder.BindInventoryUIEvent(gameObject, this);
         _dragVisual = GetDragVisual();
     }
@@ -64,7 +52,6 @@ namespace Inventory
     public void OnExitInterface(GameObject obj)
     {
         mouseItem.ui = null;
->>>>>>> Stashed changes
     }
     
     public void OnEnter(InventorySlot slot)
@@ -74,19 +61,14 @@ namespace Inventory
 
     public void OnExit(InventorySlot slot)
     {
-<<<<<<< Updated upstream
 
-=======
         if (mouseItem != null && mouseItem.toSlot != null)
             mouseItem.toSlot = null;
->>>>>>> Stashed changes
     }
 
     public void OnDragStart(InventorySlot slot)
     {
-<<<<<<< Updated upstream
         
-=======
         if (slot.ID >= 0)
         {
             _dragVisualImage.sprite = inventory.database.GetItem[slot.ID].uiDisplay;
@@ -96,7 +78,6 @@ namespace Inventory
         mouseItem.toSlot = slot;
         _dragVisualCanvas = mouseItem.obj.GetComponentInParent<Canvas>();
         _dragVisualRect = mouseItem.obj.GetComponent<RectTransform>();
->>>>>>> Stashed changes
     }
 
     public void OnDragEnd(InventorySlot slot)
@@ -107,8 +88,6 @@ namespace Inventory
     public void OnDrag(InventorySlot slot, PointerEventData eventData)
     {
         
-<<<<<<< Updated upstream
-=======
         _dragVisualRect.position = worldPoint;
     }
 
@@ -130,7 +109,6 @@ namespace Inventory
         _dragVisual.SetActive(false);
         
         return _dragVisual;
->>>>>>> Stashed changes
     }
     
     protected void StartManualDrag(int itemId)
@@ -175,8 +153,6 @@ namespace Inventory
         }
     }
 }
-<<<<<<< Updated upstream
-=======
 
 public class MouseItem
 {
@@ -187,4 +163,3 @@ public class MouseItem
 }
 }
 
->>>>>>> Stashed changes

@@ -31,8 +31,6 @@ namespace Inventory
 
         }
 
-<<<<<<< Updated upstream
-=======
         public static void BindInventoryUIEvent(GameObject obj, InventoryView ui)
         {
             AddEvent(obj, EventTriggerType.PointerEnter, delegate { ui.OnEnterInterface(obj); });
@@ -60,7 +58,6 @@ namespace Inventory
             
         }
 
->>>>>>> Stashed changes
         private static void AddEvent(GameObject obj,
             EventTriggerType type,
             UnityEngine.Events.UnityAction<BaseEventData> action)
