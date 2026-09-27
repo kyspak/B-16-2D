@@ -87,7 +87,7 @@ namespace Inventory
 
     public void OnDrag(InventorySlot slot, PointerEventData eventData)
     {
-        
+       
         _dragVisualRect.position = worldPoint;
     }
 
